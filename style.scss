@@ -1,0 +1,77 @@
+// CSS resets
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 10px;
+   font-family: 'Roboto Slab', serif;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+
+// Typography
+.pageTitle {
+   font-size: 3rem;
+   margin-top: 3rem;
+}
+
+
+// Layout
+.site {
+   &__content {
+     margin: 0 auto; 
+   }
+}
+
+
+// Game board
+.board {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+
+   padding-top: 4rem;
+   border: 1px solid red;
+
+   &__box {
+      width: 100px;
+      height: 100px;
+
+      text-align: center;
+   }
+}
+
+
+
+/* Footer */
+.site {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+}
+
+.site__content {
+   flex: 1;
+}
+
+.footer__link {
+   display: block;
+   width: 50px;
+   margin: 1rem;
+   transition: transform 0.2s ease-in-out;
+}
+
+.footer__link:hover {
+   cursor: pointer;
+   transform: scale(1.1);
+}
