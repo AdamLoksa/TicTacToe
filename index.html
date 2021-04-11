@@ -10,25 +10,30 @@
 </head> 
 <body class="site">
    <main class="site__content">   
-      <h1 class="pageTitle">Tic Tac Toe Game</h1>
+      <h1 class="page-title">Tic Tac Toe Game vs. AI</h1>
 
       <div class="board">
-         <div class="board__box border-right border-bottom">o</div>
-         <div class="board__box border-right border-bottom">o</div>
-         <div class="board__box border-bottom">x</div>
+         <div data-board="position-0" class="board__box board__box--hover border-right border-bottom"></div>
+         <div data-board="position-1" class="board__box board__box--hover border-right border-bottom"></div>
+         <div data-board="position-2" class="board__box board__box--hover border-bottom"></div>
 
-         <div class="board__box border-right border-bottom">o</div>
-         <div class="board__box border-right border-bottom">x</div>
-         <div class="board__box border-bottom">x</div>
+         <div data-board="position-3" class="board__box board__box--hover border-right border-bottom"></div>
+         <div data-board="position-4" class="board__box board__box--hover border-right border-bottom"></div>
+         <div data-board="position_5" class="board__box board__box--hover border-bottom"></div>
          
-         <div class="board__box border-right">o</div>
-         <div class="board__box border-right">o</div>
-         <div class="board__box">x</div>
+         <div data-board="position-6" class="board__box board__box--hover border-right"></div>
+         <div data-board="position-7" class="board__box board__box--hover border-right"></div>
+         <div data-board="position-8" class="board__box board__box--hover"></div>
       </div>
 
       <div class="btns">
-         <a href="#" class="btn btn--reset">Reset</a>
-         <a href="#" class="btn btn--mode">Player vs. Computer</a>
+         <a href="#" class="btn btn--mode">Choose difficulty</a>
+         <a href="#" class="btn btn--reset">Start again</a>
+      </div>
+
+      <div class="winner">
+         <h1 class="winner__title"></h1>
+         <a href="#" class="btn btn--new-game">Start a new game</a>
       </div>
    </main>
 
